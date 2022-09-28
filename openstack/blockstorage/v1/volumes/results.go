@@ -36,6 +36,7 @@ type Volume struct {
 	ID string `json:"id"`
 	// Size of the volume in GB.
 	Size int `json:"size"`
+	Wwn  string `json:"wwn"`
 }
 
 func (r *Volume) UnmarshalJSON(b []byte) error {

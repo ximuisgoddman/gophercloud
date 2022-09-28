@@ -75,6 +75,7 @@ type Volume struct {
 	ConsistencyGroupID string `json:"consistencygroup_id"`
 	// Multiattach denotes if the volume is multi-attach capable.
 	Multiattach bool `json:"multiattach"`
+	Wwn string `json:"wwn"`
 }
 
 func (r *Volume) UnmarshalJSON(b []byte) error {
